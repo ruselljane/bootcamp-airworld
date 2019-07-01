@@ -1,0 +1,1145 @@
+/*************************************** Fonts ***************************************/
+@font-face {
+    font-family: Walsheim;
+    src: url("../fonts/Walsheim_Regular.ttf")
+}
+
+@font-face {
+    font-family: Walsheim_bold;
+    src: url("../fonts/Walsheim_Bold.otf")
+}
+
+@font-face {
+    font-family: Walsheim_light;
+    src: url("../fonts/Walsheim_Light.otf")
+}
+
+@font-face {
+    font-family: Pintgram;
+    src: url("../fonts/Pintgram_Regular.ttf")
+}
+
+
+body {
+    margin: 0;
+    font-family: Walsheim;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/*************************************** Start of NavBar ***************************************/
+.navbar,
+.header {
+    background-color: #FFF;
+    /* margin: 0!important; */
+    box-shadow: 0 6px 6px rgba(0, 0, 0, .3);
+    border-top: #1b254a 1px solid;
+    z-index: 1;
+}
+
+#airworld-whole-logo {
+    height: 60px;
+    margin: 0;
+}
+
+#menu-btn {
+    width: 55px;
+}
+
+.navbar-icons {
+    width: 40px;
+}
+
+.fixed-navbar {
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: Pintgram;
+}
+
+.nav-item {
+    padding: 2px 10px;
+}
+
+.nav-link {
+    color: #000;
+    font-family: Walsheim;
+    font-size: 15px;
+}
+
+.nav-right {
+    float: right;
+}
+
+.notification {
+    position: relative;
+    display: inline-block;
+}
+
+.notification .badge {
+    position: absolute;
+    top: 1px;
+    right: -10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #2A60DE;
+    color: #2A60DE;
+    font-size: 1px;
+}
+
+#icon-back {
+    width: 35px;
+    margin-right: 8%;
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    #airworld-whole-logo {
+        height: 50px;
+        margin: 0;
+    }
+
+    .notification .badge {
+        left: 35px;
+        width: 8px;
+        height: 8px;
+    }
+
+    #icon-back {
+        display: block
+    }
+}
+
+/*************************************** End of NavBar ***************************************/
+
+/*************************************** Start of Footer ***************************************/
+#footer {
+    width: 100%;
+    /* height: 175px; */
+    background-color: #1b254a;
+    color: #FFF;
+    margin-top: 60px;
+}
+
+#footer-title {
+    font-family: Pintgram;
+    padding-top: 60px;
+    font-size: 60px;
+    margin: 0;
+    line-height: 0.5;
+}
+
+#footer-description {
+    padding-bottom: 60px;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 767px) {
+    #footer {
+        display: none;
+    }
+
+    #footer-title {
+        padding-top: 50px;
+        font-size: 40px;
+    }
+
+    #footer-description {
+        padding-bottom: 40px;
+        font-size: 9px;
+    }
+}
+
+/*************************************** End of Footer ***************************************/
+
+/*************************************** Start of home.html ***************************************/
+.container-fluid,
+.row {
+    margin: 0;
+}
+
+/* Loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -75px 0 0 -75px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #1b254a;
+    border-left: 10px solid #1b254a;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@media only screen and (max-width: 767px) {
+    #loader {
+        left: 59%;
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+/* End of Loader */
+
+/* Start of home.html*/
+#home {
+    /* margin-left: 20%;  */
+}
+
+#check-in-div {
+    padding-top: 70px;
+}
+
+.dark-btn {
+    border-radius: 75px;
+    border: solid 1px #FFF;
+    background-color: #1b254a;
+    color: #FFF;
+    /* width: 20%; */
+    height: 50px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, .3);
+    transition: 0.5s;
+    font-size: 20px;
+    font-family: Walsheim;
+}
+
+.dark-btn:hover {
+    color: #1b254a;
+    background-color: #FFF;
+    border: solid 2px #1b254a;
+}
+
+.light-btn {
+    border-radius: 75px;
+    border: solid 1px #1b254a;
+    background-color: #FFF;
+    color: #1b254a;
+    /* width: 20%; */
+    height: 50px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, .3);
+    transition: 0.5s;
+    font-size: 20px;
+    font-family: Walsheim;
+}
+
+.light-btn:hover {
+    color: #FFF;
+    background-color: #1b254a;
+    border: solid 2px #FFF;
+}
+
+.home-btn-size {
+    width: 50%;
+}
+
+#check-in-btn-home {
+    float: right;
+}
+
+#btn-div {
+    background-image: url("../assets/cover.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 20%;
+    padding-bottom: 3%;
+}
+
+/* Start of Cards*/
+#cards-div {
+    margin: 20px 400px;
+}
+
+.cards {
+    border-radius: 5px;
+    height: 250px;
+    width: 600px;
+    margin: 25px 0;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);
+    padding: 20px 10px;
+}
+
+.booked-paid {
+    background-color: #DEFFDE;
+    border: #00682A solid 1px;
+}
+
+.booked-unpaid {
+    background-color: #FFDEDE;
+    border: #680000 solid 1px;
+}
+
+.checked-in,
+.important-card {
+    background-color: #D4E6FC;
+    border: #000E68 solid 1px;
+}
+
+.cards-nav-tabs .cards-nav-link.active {
+    background-color: #1b254a;
+    color: #FFF;
+}
+
+.cards-nav-link {
+    width: 500px;
+    font-size: 18px;
+}
+
+.home-card-title {
+    font-family: Walsheim;
+    font-size: 30px;
+    color: #000;
+}
+
+.home-card-time {
+    font-family: Walsheim_light;
+    font-weight: 700;
+    font-size: 25px;
+    color: #000;
+}
+
+.home-card-details {
+    font-family: Walsheim_light;
+    font-size: 20px;
+    color: #000;
+}
+
+.float-left {
+    float: left;
+    text-align: left;
+}
+
+.home-card-icon {
+    float: right;
+}
+
+
+/* End of Cards*/
+
+/* Responsiveness */
+@media only screen and (max-width: 767px) {
+    .home-card-icon {
+        width: 90%;
+    }
+
+    .cards {
+        padding: 10px 5px;
+    }
+
+    .home-card-title {
+        font-size: 25px;
+    }
+
+    .home-card-time,
+    .home-card-details {
+        font-size: 18px;
+    }
+}
+
+/* End of Check-in     */
+/*************************************** End of home.html ***************************************/
+
+/*************************************** Start of check-in.html ***************************************/
+#home-img {
+    width: 100%;
+    margin-bottom: 17px;
+}
+
+
+#booking-details-form {
+    padding: 100px 0 125px 0;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.booking-details-title {
+    padding: 60px 0 30px 0;
+}
+
+.booking-details-input {
+    margin-bottom: 25px;
+    width: 100%;
+    background-color: #e8f0fe;
+    border: 1px solid #2A292975;
+}
+
+.booking-details-label {
+    font-size: 20px;
+    text-align: left !important;
+}
+
+#booking-details-confirm {
+    width: 100%;
+    margin-top: 30px;
+}
+
+#check-in-details-div {
+    padding-top: 120px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    #booking-details-form {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .booking-details-title {
+        font-size: 28px;
+        padding: 40px 0 30px 0;
+    }
+
+    .booking-details-label {
+        font-size: 17px;
+    }
+
+    #booking-details-form {
+        padding: 100px 0 70px 0;
+    }
+
+    #check-in-btn-home {
+        float: none;
+    }
+
+    #home-hide-center {
+        display: block;
+    }
+
+    .home-btn-size {
+        width: 90%;
+        height: 45px;
+        font-size: 18px;
+        font-family: Walsheim_bold;
+        margin-bottom: 8px;
+    }
+
+    #flights-booked-h1 {
+        font-family: Walsheim_bold;
+        margin: 15px 0 20px 10px;
+        /* padding-left: 10px; */
+    }
+
+    #cards-div {
+        margin: 20px 0;
+    }
+
+    .cards {
+        height: 175px;
+        width: 100%;
+    }
+
+    .cards-nav-link {
+        width: 100%;
+    }
+
+    #check-in-div2 {
+        display: block;
+        padding-top: 70px;
+    }
+
+    #check-in-div {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #check-in-div {
+        display: block;
+    }
+
+    #check-in-div2 {
+        display: none;
+    }
+}
+
+/*************************************** End of check-in.html ***************************************/
+
+/*************************************** Start of boarding-pass.html ***************************************/
+#boarding-ticket {
+    border: 1px solid #CCC;
+    width: 70%;
+    margin-top: 10%;
+}
+
+.boarding-pass {
+    font-family: Walsheim_bold;
+    padding-bottom: 20px;
+
+}
+
+.check-details-inputG {
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+.check-details-input {
+    border-radius: 5px !important;
+    margin-right: 5px;
+}
+
+.bp-info-btn {
+    width: 38px;
+}
+
+/* Responsiveness */
+@media only screen and (min-width: 768px) {
+
+    /* body {
+      background-color: lightblue;
+    } */
+    #boarding-ticket-div,
+    #boarding-ticket-details {
+        height: 640px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #boarding-ticket {
+        margin-top: 0%;
+        margin-bottom: 8%;
+        width: 92%;
+    }
+
+    #boarding-ticket-details {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .check-details-inputG {
+        width: 100%;
+    }
+}
+
+/*************************************** End of boarding-pass.html ***************************************/
+
+/*************************************** Start of boarding-area-location.html ***************************************/
+.padd-top {
+    padding-top: 120px;
+}
+
+#BA-Location-title {
+    font-family: Walsheim_bold;
+}
+
+.red {
+    color: red;
+}
+
+/* Maps */
+.maps-div {
+    width: 100%;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 678px;
+    width: 1000px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 678px;
+    width: 841px;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 767px) {
+    .mapouter {
+        width: 345px;
+    }
+
+    .gmap_canvas {
+        width: 345px;
+    }
+}
+
+/*************************************** End of boarding-area-location.html ***************************************/
+
+/*************************************** Start of seat-location.html ***************************************/
+#seat-location-div {
+    padding-top: 120px;
+}
+
+#SL-location {
+    font-family: Walsheim_bold;
+}
+
+.seats,
+.icon-down {
+    width: 30px;
+}
+
+.SL-words {
+    font-size: 21px;
+}
+
+#airplane-locator {
+    border: 1px solid #C7C7CC;
+}
+
+#exit-left {
+    float: left;
+    width: 40px;
+}
+
+#exit-right {
+    float: right;
+    width: 40px;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 767px) {
+    .SL-words {
+        font-size: 17px;
+    }
+
+    #airplane-locator {
+        border: 1px solid #C7C7CC;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #airplane-locator {
+        width: 500px;
+    }
+}
+
+/*************************************** End of seat-location.html ***************************************/
+
+/*************************************** Start of baggage-restriction.html ***************************************/
+#baggage-restriction-div {
+    padding-top: 100px;
+}
+
+#BR-Title {
+    font-family: Walsheim_bold;
+}
+
+.cvv-a,
+.cvv-a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.BR-dt {
+    padding-top: 18px;
+    padding-bottom: 12px;
+}
+
+.baggage-allotment,
+.queue-card {
+    background-color: #FFFFFF;
+    border: #C7C7CC solid 1px;
+    /* padding: 20px 5px; */
+}
+
+.BR-weight {
+    font-family: Walsheim_bold;
+}
+
+.BR-price {
+    font-family: Walsheim_bold;
+    font-size: 45px;
+    color: #FF0000;
+    padding-top: 45%;
+    float: right;
+}
+
+.BR-final {
+    padding-top: 20px;
+    font-size: 22px;
+}
+
+.padd-bottom {
+    padding-bottom: 140px;
+}
+
+/*************************************** End of baggage-restriction.html ***************************************/
+
+/*************************************** Start of airplane-meal.html ***************************************/
+#airplane-meal-div,
+#airplane-meal1-div,
+#airplane-meal2-div {
+    padding-top: 100px;
+}
+
+.AM-details {
+    color: #FFF;
+    font-family: Walsheim_bold;
+}
+
+.AM-title,
+.AM-view-title {
+    font-family: Walsheim_bold;
+}
+
+.AM-price {
+    font-family: Walsheim_bold;
+    color: #FF0000;
+}
+
+.AM-images,
+#airplane-meal-purchase {
+    width: 65%;
+}
+
+#airplane-meal-purchase {
+    margin-bottom: 30px;
+}
+
+.carousel-img {
+    width: 500px;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 767px) {
+
+    .AM-images,
+    #airplane-meal-purchase {
+        width: 100%;
+    }
+
+    .AM-title {
+        float: left;
+    }
+
+    .AM-price {
+        float: right;
+    }
+
+    .padd-hide {
+        padding: 0;
+    }
+
+    .left-float {
+        float: left;
+        text-align: left;
+    }
+
+    .carousel-img {
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        padding: 20px;
+    }
+}
+
+/*************************************** End of airplane-meal.html ***************************************/
+
+/*************************************** Start of profile.html ***************************************/
+#profile-div {
+    padding-top: 100px;
+}
+
+#profile-name {
+    font-family: Walsheim_bold;
+    margin-bottom: 0;
+    margin-top: 27px;
+    line-height: 0.85;
+}
+
+.display-picture {
+    width: 103px;
+    float: right;
+    /* padding-top:  */
+}
+
+.aw-no {
+    font-family: Walsheim_light;
+    margin: 0;
+}
+
+#profile-details,
+.details-holder {
+    padding-top: 15px;
+}
+
+#save-btn,
+#edit-btn {
+    float: right;
+    background-color: transparent;
+    border: none;
+}
+
+.save-img,
+.edit-img {
+    width: 25px;
+}
+
+
+.btn-holder {
+    height: 26px;
+}
+
+.profile_inputs:disabled {
+    font-size: 21px;
+    margin-bottom: 18px;
+    border: none;
+    padding: 0;
+    /* background-color: #EBEBEB;
+    border: solid 1px #2A2929;
+    border-radius: 5px; 
+    padding: .375rem .75rem;*/
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #FFF;
+}
+
+.passport-details {
+    font-family: Walsheim_bold;
+    font-size: 23px;
+}
+
+.profile-confirm-btns {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#profile-confirm-holder {
+    margin-top: 10px;
+    display: none;
+}
+
+/* for js */
+#save-btn {
+    display: none;
+}
+
+/*************************************** End of profile.html ***************************************/
+
+/*************************************** Start of book.html ***************************************/
+#book-div {
+    padding-top: 100px;
+}
+
+#soon {
+    font-family: Walsheim_bold;
+    padding: 100px 0;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 767px) {
+    #soon {
+        float: left;
+        padding: 0;
+    }
+
+    #book-div {
+        padding-left: 10px;
+    }
+}
+
+/*************************************** End of book.html ***************************************/
+
+/*************************************** Start of promos.html ***************************************/
+#promos-div {
+    padding-top: 100px;
+}
+
+#promos-title {
+    font-family: Walsheim_bold;
+}
+
+.promos-img {
+    width: 90%;
+}
+
+@media only screen and (max-width: 767px) {
+    .promos-img {
+        width: 100%;
+    }
+
+    .promos-details {
+        text-align: center;
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/*************************************** End of promos.html ***************************************/
+
+/*************************************** Start of reminders.html ***************************************/
+#reminders-div {
+    padding-top: 100px;
+}
+
+#reminders-title {
+    font-family: Walsheim_bold;
+}
+
+.rem-cards {
+    border-radius: 5px;
+    /* height: 300px; */
+    width: 600px;
+    margin: 25px 0;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);
+    padding: 20px 10px;
+    font-size: 17px;
+}
+
+.rem-icons {
+    width: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .rem-cards {
+        width: 100%;
+    }
+}
+
+/*************************************** End of reminders.html ***************************************/
+
+/*************************************** Start of contact.html ***************************************/
+#contact-div {
+    padding-top: 100px;
+    padding-bottom: 375px;
+}
+
+#contact-title {
+    font-family: Walsheim_bold;
+}
+
+.contact-details {
+    font-size: 22px;
+}
+
+.contact-img {
+    width: 30px;
+    float: right;
+}
+
+@media only screen and (max-width: 767px) {
+    #contact-div {
+        padding-bottom: 100px;
+    }
+}
+
+/*************************************** End of contact.html ***************************************/
+
+/*************************************** End of forgot-password.html ***************************************/
+#forgot-password-div {
+    padding-top: 150px;
+}
+
+.FP-title {
+    padding: 60px 0 30px 0;
+    font-family: Walsheim_bold;
+}
+
+.FP-input,
+.FP-code {
+    margin-bottom: 25px;
+    width: 100%;
+    background-color: #e8f0fe;
+    border: 1px solid #2A292975;
+    text-align: center;
+}
+
+#FP-confirm {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.FP-code {
+    height: 150px;
+}
+
+.RP-input {
+    margin-bottom: 25px;
+    width: 100%;
+    background-color: #e8f0fe;
+    border: 1px solid #2A292975;
+}
+
+@media only screen and (max-width: 767px) {
+    #contact-div {
+        padding-bottom: 100px;
+    }
+
+    .FP-title {
+        padding: 60px 0 30px 0;
+        text-align: center;
+    }
+}
+
+/*************************************** Start of forgot-password.html ***************************************/
+
+/*************************************** Start of bill.html ***************************************/
+#bill-div {
+    padding-top: 100px;
+}
+
+#bill-title {
+    font-family: Walsheim_bold;
+}
+
+.bill-img {
+    width: 100%;
+    border: solid 1px #000;
+}
+
+/*************************************** End of bill.html ***************************************/
+
+/*************************************** Start of card-details.html ***************************************/
+#card-details-div {
+    padding-top: 100px;
+}
+
+#card-details-title {
+    font-family: Walsheim_bold;
+}
+
+.pay-cards {
+    width: 60px;
+}
+
+.CD-input {
+    margin-bottom: 25px;
+    width: 100%;
+    background-color: #e8f0fe;
+    border: 1px solid #2A292975;
+    border-radius: 5px !important;
+    margin-right: 5px;
+}
+
+.half-input {
+    text-align: center;
+    margin: 0 15px;
+}
+
+.CD-btns {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.modal-title {
+    font-family: Walsheim_bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+.modal-body {
+    font-size: 15px;
+}
+
+.modal-dialog {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
+
+@media(max-width: 768px) {
+    .modal-dialog {
+        min-height: calc(100vh - 20px);
+    }
+}
+
+/*************************************** End of card-details.html ***************************************/
+
+
+.modal-content {
+    border-radius: 20px;
+}
+
+.modal-btn {
+    width: 100%;
+    background: transparent;
+    color: #007aff;
+    padding: 10px;
+}
+
+.border-none {
+    border: none;
+}
+
+.border-blue {
+    border-top: solid 1px #CDCDCD;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.ios {
+    padding: 0;
+}
+
+.modal-header {
+    justify-content: center;
+}

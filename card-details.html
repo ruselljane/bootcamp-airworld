@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Airworld</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/airworld-white.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Start of NavBar -->
+    <nav class="navbar navbar-expand-md fixed-navbar">
+        <a href="boarding-pass.html"><img src="assets/icon-back.png" alt="" id="icon-back"></a>
+        <a class="" href="home.html">
+            <img src="assets/airworld-whole-logo.png" alt="" id="airworld-whole-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <img src="assets/menu.png" alt="menu-btn" id="menu-btn">
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <!-- <li class="nav-item">
+                            <a class="nav-link" href="home.html">
+                                <img src="assets/icons-home.png" alt="" class="navbar-icons">
+                                Home
+                            </a>
+                        </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <img src="assets/icons-profile.png" alt="" class="navbar-icons">
+                        Profile
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="book.html">
+                        <img src="assets/icons-book.png" alt="" class="navbar-icons">
+                        Book a Flight
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="promos.html">
+                        <img src="assets/icons-promos.png" alt="" class="navbar-icons">
+                        Promos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link notification" href="reminders.html">
+                        <img src="assets/icons-reminder.png" alt="" class="navbar-icons">
+                        Reminders
+                        <span class="badge">1</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        <img src="assets/icons-contact.png" alt="" class="navbar-icons">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="assets/icons-logout.png" alt="" class="navbar-icons">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    </div>
+    <!-- End of NavBar -->
+
+    <!-- Start of Bills -->
+    <div id="card-details-div" class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <h2 id="card-details-title">Card Details</h2><br>
+            <p>We accept</p>
+            <center>
+                <div class="row">
+                    <div class="col-3"><img src="assets/pay-visa.png" alt="" class="pay-cards"></div>
+                    <div class="col-3"><img src="assets/pay-amex.png" alt="" class="pay-cards"></div>
+                    <div class="col-3"><img src="assets/pay-discover.png" alt="" class="pay-cards"></div>
+                    <div class="col-3"><img src="assets/pay-mastercard.png" alt="" class="pay-cards"></div>
+                </div>
+            </center>
+            <br>
+
+            <form action="" class="CD-form">
+                <label for="card-number">Card Number</label>
+                <input type="number" class="CD-input form-control" name="car-num" id="car-num">
+
+                <label for="expiration">Expiration Date</label>
+                <div class="input-group check-details-inputG">
+                    <input type="number" name="month" id="month" class="CD-input form-control half-input"
+                        placeholder="Month">
+
+                    <input type="number" name="year" id="year" class="CD-input form-control half-input"
+                        placeholder="Year">
+
+                </div>
+
+                <label for="cvv">CVV</label>
+                <div class="input-group check-details-inputG">
+                    <input type="number" name="cvv" id="cvv" class="CD-input form-control">
+                    <a href="airplane-meal.html" data-toggle="modal" data-target="#cvv-Details">
+                        <img src="assets/help.png" alt="" class="bp-info-btn">
+                    </a>
+                </div><br><br>
+
+                <center>
+                    <input type="button" name="" id="" class="dark-btn CD-btns" value="Pay Now"><br>
+                    <input type="button" name="" id="" class="light-btn CD-btns" value="Cancel"
+                        onclick="window.location.href = 'boarding-pass.html'">
+                </center>
+
+                <!-- Pay Modal -->
+                <div class="modal fade" id="cvv-Details" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button><br> -->
+                                <center>
+                                    <h4 class="modal-title">CVV</h4>
+                                </center>
+                            </div>
+                            <div class="modal-body">
+                                <p>CVV is an anti-fraud security feature to help verify that you are in possession of
+                                    your credit card. For Visa/Mastercard, the three-digit CVV number is printed on the
+                                    signature panel on the back of the card immediately after the card's account number.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- End of Pay Modal -->
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <!-- End of Bills -->
+
+    <!-- Start of Footer -->
+    <div id="footer">
+        <center>
+            <p id="footer-title">AirWorld</p>
+            <p id="footer-description">&copy; Rusell Jane Quitain</p>
+        </center>
+    </div>
+    <!-- End of Footer -->
+</body>
+
+<footer>
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script src="js/script.js"></script>
+</footer>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Airworld</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/airworld-white.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <!-- Start of NavBar -->
+    <nav class="navbar navbar-expand-md fixed-navbar">
+        <a href="home.html"><img src="assets/icon-back.png" alt="" id="icon-back"></a>
+        <a class="" href="home.html">
+            <img src="assets/airworld-whole-logo.png" alt="" id="airworld-whole-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <img src="assets/menu.png" alt="menu-btn" id="menu-btn">
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="home.html">
+                            <img src="assets/icons-home.png" alt="" class="navbar-icons">
+                            Home
+                        </a>
+                    </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <img src="assets/icons-profile.png" alt="" class="navbar-icons">
+                        Profile
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="book.html">
+                        <img src="assets/icons-book.png" alt="" class="navbar-icons">
+                        Book a Flight
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="promos.html">
+                        <img src="assets/icons-promos.png" alt="" class="navbar-icons">
+                        Promos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link notification" href="reminders.html">
+                        <img src="assets/icons-reminder.png" alt="" class="navbar-icons">
+                        Reminders
+                        <span class="badge">1</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        <img src="assets/icons-contact.png" alt="" class="navbar-icons">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="assets/icons-logout.png" alt="" class="navbar-icons">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    </div>
+    <!-- End of NavBar -->
+
+    <!-- Start of Booking Details Form -->
+    <div id="booking-details-form" class="">
+        <form action="boarding-pass.html" method="POST" id="boarding-details-form">
+            <h2 class="booking-details-title">Please confirm booking details</h2>
+            <label for="booking-reference" class="booking-details-label">Booking Reference No.</label>
+            <input type="number" name="booking-reference" id="booking-reference"
+                class="booking-details-input form-control" required onkeypress='validate(event)' value="0010100101010">
+
+            <label for="last-name" class="booking-details-label">Passenger's Last Name</label>
+            <input type="text" name="last-name" id="last-name" class="booking-details-input form-control" required
+                value="Quitain">
+
+            <label for="contact-number" class="booking-details-label">Contact Number</label>
+            <input type="number" name="contact-number" id="contact-number" class="booking-details-input form-control"
+                required value="639154755124" onkeypress='validate(event)'>
+
+            <input type="button" name="booking-details-confirm" id="booking-details-confirm" class="dark-btn"
+                value="Confirm" onclick="window.location.href='boarding-pass_view-only-id=0001.html'">
+        </form>
+
+        <p id="try"></p>
+        <p id="tryw"></p>
+    </div>
+    <!-- End of Booking Details Form -->
+
+    <!-- Start of Footer -->
+    <div id="footer">
+        <center>
+            <p id="footer-title">AirWorld</p>
+            <p id="footer-description">&copy; Rusell Jane Quitain</p>
+        </center>
+    </div>
+    <!-- End of Footer -->
+</body>
+
+<footer>
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</footer>
+
+</html>

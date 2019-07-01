@@ -1,0 +1,207 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <title>Airworld</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="assets/airworld-white.png" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- Start of NavBar -->
+        <nav class="navbar navbar-expand-md fixed-navbar">
+            <a href="boarding-pass.html"><img src="assets/icon-back.png" alt="" id="icon-back"></a>
+            <a class="" href="home.html">
+                <img src="assets/airworld-whole-logo.png" alt="" id="airworld-whole-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <img src="assets/menu.png" alt="menu-btn" id="menu-btn">
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item">
+                                <a class="nav-link" href="home.html">
+                                    <img src="assets/icons-home.png" alt="" class="navbar-icons">
+                                    Home
+                                </a>
+                            </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            <img src="assets/icons-profile.png" alt="" class="navbar-icons">
+                            Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="book.html">
+                            <img src="assets/icons-book.png" alt="" class="navbar-icons">
+                            Book a Flight
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promos.html">
+                            <img src="assets/icons-promos.png" alt="" class="navbar-icons">
+                            Promos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link notification" href="reminders.html">
+                            <img src="assets/icons-reminder.png" alt="" class="navbar-icons">
+                            Reminders
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <img src="assets/icons-contact.png" alt="" class="navbar-icons">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <img src="assets/icons-logout.png" alt="" class="navbar-icons">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        </div>
+        <!-- End of NavBar -->
+
+        <!-- Start of Bag Restriction -->
+        <div id="baggage-restriction-div" class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h2 id="BR-Title">Baggage Allowance</h2>
+
+                <dl>
+                    <dt class="BR-dt">In addition to the free carry-on allowance, a passenger is allowed to carry the
+                        following items onboard:</dt>
+                    <dd>- laptop with case</dd>
+                    <dd>- small handbag</dd>
+                    <dd>- coat</dd>
+                    <dd>- wrap or blanket</dd>
+                    <dd>- walking stick or a pair of crutches</dd>
+                    <dd>- small camera or a pair of binoculars</dd>
+                    <dd>- reasonable amount of reading materials infant's food and carrying basket</dd>
+                </dl>
+
+                <a href="" data-toggle="modal" data-target="#cvv-Details" class="cvv-a">
+                    <div id="BR-cards" class="">
+                        <div id="checked-cards2" class="cards baggage-allotment row">
+                            <div class="col-8">
+                                <h2 class="BR-weight">20kg</h2>
+                                <p class="BR-details">
+                                    1 free bag (economy) or 2 bags (all other classes) <br>158cm total
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <h2 class="BR-price">$50</h2>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" data-toggle="modal" data-target="#cvv-Details" class="cvv-a">
+                    <div id="BR-cards" class="">
+                        <div id="checked-cards2" class="cards baggage-allotment row">
+                            <div class="col-8">
+                                <h2 class="BR-weight">23kg</h2>
+                                <p class="BR-details">
+                                    1 bag free-$30 (depending on route) <br>157cm total 23kg per bag
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <h2 class="BR-price">$75</h2>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" data-toggle="modal" data-target="#cvv-Details" class="cvv-a">
+                    <div id="BR-cards" class="">
+                        <div id="checked-cards2" class="cards baggage-allotment row">
+                            <div class="col-8">
+                                <h2 class="BR-weight">35kg</h2>
+                                <p class="BR-details">
+                                    15kg-35kg, depending on class and route
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <h2 class="BR-price">$100</h2>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" data-toggle="modal" data-target="#pay-now-modal" class="cvv-a">
+                    <div id="BR-cards" class="">
+                        <div id="checked-cards2" class="cards baggage-allotment row">
+                            <div class="col-8">
+                                <h2 class="BR-weight">40kg</h2>
+                                <p class="BR-details">
+                                    1 bag free (max 7kg) <br>plus check in baggage maximum of 40kg
+                                </p>
+                            </div>
+                            <div class="col-4">
+                                <h2 class="BR-price">$125</h2>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <!-- Pay Modal -->
+        <div class="modal fade" id="pay-now-modal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button><br> -->
+                        <center>
+                            <h4 class="modal-title">Pay Via</h4>
+                        </center>
+                    </div>
+                    <div class="modal-body ios">
+                        <a href="bill.html"><button class="modal-btn border-none">Cashier</button></a><br>
+                        <a href="card-details.html"><button class="modal-btn border-blue">Credit Card</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End of Pay Modal -->
+        <!-- End of Bag Restriction -->
+
+        <!-- Start of Footer -->
+        <div id="footer">
+            <center>
+                <p id="footer-title">AirWorld</p>
+                <p id="footer-description">&copy; Rusell Jane Quitain</p>
+            </center>
+        </div>
+        <!-- End of Footer -->
+    </body>
+
+    <footer>
+        <script src="js/jquery.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+        <script src="js/script.js"></script>
+    </footer>
+
+    </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Airworld</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/airworld-white.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body onload="">
+    <!-- Start of Header -->
+    <div class="header fixed-navbar">
+        <center><img src="assets/airworld-whole-logo.png" alt="" id="airworld-whole-logo"></center>
+    </div>
+    <!-- End of Header -->
+
+    <!-- Start of Booking Details Form -->
+    <div id="forgot-password-div" class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form action="" method="POST" id="boarding-details-form">
+                <h2 class="FP-title">Reset Password</h2>
+
+                <label for="pass1">Password</label>
+                <input type="password" name="pass1" id="pass1" class="RP-input form-control" required value="">
+
+                <label for="pass1">Confirm Password</label>
+                <input type="password" name="pass2" id="pass2" class="RP-input form-control" required value="">
+
+                <div id="loader"></div>
+
+                <input type="button" name="FP-confirm" id="FP-confirm" class="light-btn" value="Cancel"
+                    onclick="window.location.href = 'index.html'">
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+
+    </div>
+    <!-- End of Booking Details Form -->
+
+    <!-- Start of Footer -->
+    <div id="footer">
+        <center>
+            <p id="footer-title">AirWorld</p>
+            <p id="footer-description">&copy; Rusell Jane Quitain</p>
+        </center>
+    </div>
+    <!-- End of Footer -->
+</body>
+
+<footer>
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</footer>
+
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Airworld</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/airworld-white.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Start of NavBar -->
+    <nav class="navbar navbar-expand-md fixed-navbar">
+            <a href="boarding-pass.html"><img src="assets/icon-back.png" alt="" id="icon-back"></a>
+        <a class="" href="home.html">
+            <img src="assets/airworld-whole-logo.png" alt="" id="airworld-whole-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <img src="assets/menu.png" alt="menu-btn" id="menu-btn">
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <!-- <li class="nav-item">
+                            <a class="nav-link" href="home.html">
+                                <img src="assets/icons-home.png" alt="" class="navbar-icons">
+                                Home
+                            </a>
+                        </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html">
+                        <img src="assets/icons-profile.png" alt="" class="navbar-icons">
+                        Profile
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="book.html">
+                        <img src="assets/icons-book.png" alt="" class="navbar-icons">
+                        Book a Flight
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="promos.html">
+                        <img src="assets/icons-promos.png" alt="" class="navbar-icons">
+                        Promos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link notification" href="reminders.html">
+                        <img src="assets/icons-reminder.png" alt="" class="navbar-icons">
+                        Reminders
+                        <span class="badge">1</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        <img src="assets/icons-contact.png" alt="" class="navbar-icons">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="assets/icons-logout.png" alt="" class="navbar-icons">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    </div>
+    <!-- End of NavBar -->
+
+    <!-- Start of Seat Location HTML -->
+    <div id="seat-location-div" class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <h2 id="SL-title">Seat Number: <span id="SL-location">B09</span></h2>
+            <p id="legends" class="SL-words">Legends:</p>
+
+            <div class="row">
+                <div class="col-4">
+                    <center>
+                        <img src="assets/chair-green.png" alt="your-seat" id="your-seat" class="seats">
+                        <p id="sl-legend" class="legends-label">
+                            Your seat
+                        </p>
+                    </center>
+                </div>
+                <div class="col-4">
+                    <center>
+                        <img src="assets/chair-black.png" alt="vacant" id="vacant" class="seats">
+                        <p id="sl-legend" class="legends-label">
+                            Vacant
+                        </p>
+                    </center>
+                </div>
+                <div class="col-4">
+                    <center>
+                        <img src="assets/chair-red.png" alt="taken" id="taken" class="seats">
+                        <p id="sl-legend" class="legends-label">
+                            Taken
+                        </p>
+                    </center>
+                </div>
+            </div>
+
+            <p id="SL-reminders" class="SL-words">
+                Reminders:<br>
+                Click the Vacant icon <img src="assets/chair-black.png" alt="vacant" id="vacant" class="seats"> to
+                change seat. This is only applicable <span class="red">24 hours</span> prior to your flight.
+            </p>
+            <br>
+            <center>
+                <div id="airplane-locator">
+                    <center><br>
+                        <img src="assets/exit-left.png" alt="" id="exit-left">
+                        <span id="SL-front">Front</span>
+                        <img src="assets/exit-right.png" alt="" id="exit-right">
+                        <br><br><br>
+                    </center>
+                    <!-- row1 -->
+                    <div id="economy-seat" class="row">
+                        <div class="col-4">
+                            <img src="assets/chair-red.png" alt="taken" id="taken-r1c1" class="taken seats float-left">
+                        </div>
+                        <div class="col-4">
+                            <center>
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r1c2" class="vacant seats">
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r1c3" class="vacant seats">
+                            </center>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/chair-black.png" alt="vacant" id="vacant-r1c4"
+                                class="vacant seats float-right">
+                        </div>
+                    </div>
+
+                    <!-- row2 -->
+                    <div id="economy-seat" class="row">
+                        <div class="col-4">
+                            <img src="assets/chair-red.png" alt="taken" id="taken-r2c1" class="taken seats float-left">
+                        </div>
+                        <div class="col-4">
+                            <center>
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r2c2" class="vacant seats">
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r2c3" class="vacant seats">
+                            </center>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/chair-black.png" alt="vacant" id="vacant-r2c4"
+                                class="vacant seats float-right">
+                        </div>
+                    </div>
+
+                    <!-- row3 -->
+                    <div id="economy-seat" class="row">
+                        <div class="col-4">
+                            <img src="assets/chair-red.png" alt="taken" id="taken-r3c1" class="taken seats float-left">
+                        </div>
+                        <div class="col-4">
+                            <center>
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r3c2" class="vacant seats">
+                                <img src="assets/chair-red.png" alt="taken" id="taken-r3c3" class="taken seats">
+                            </center>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/chair-green.png" alt="vacant" id="your-seat-r3c4"
+                                class="taken seats float-right">
+                        </div>
+                    </div>
+
+                    <!-- row4 -->
+                    <div id="economy-seat" class="row">
+                        <div class="col-4">
+                            <img src="assets/chair-red.png" alt="taken" id="taken-r4c1" class="taken seats float-left">
+                        </div>
+                        <div class="col-4">
+                            <center>
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r4c2" class="vacant seats">
+                                <img src="assets/chair-red.png" alt="taken" id="taken-r4c3" class="taken seats">
+                            </center>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/chair-red.png" alt="taken" id="taken-r4c4" class="taken seats float-right">
+                        </div>
+                    </div>
+
+                    <!-- row5 -->
+                    <div id="economy-seat" class="row">
+                        <div class="col-4">
+                            <img src="assets/chair-black.png" alt="vacant" id="vacant-r5c2"
+                                class="vacant seats float-left">
+                        </div>
+                        <div class="col-4">
+                            <center>
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r5c2" class="vacant seats">
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r5c2" class="vacant seats">
+                            </center>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/chair-red.png" alt="taken" id="taken-r5c4" class="taken seats float-right">
+                        </div>
+                    </div>
+
+                    <!-- row5 -->
+                    <div id="economy-seat" class="row">
+                        <div class="col-4">
+                            <img src="assets/chair-black.png" alt="vacant" id="vacant-r5c1"
+                                class="vacant seats float-left">
+                        </div>
+                        <div class="col-4">
+                            <center>
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r5c2" class="vacant seats">
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r5c3" class="vacant seats">
+                            </center>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/chair-red.png" alt="taken" id="taken-r5c4" class="taken seats float-right">
+                        </div>
+                    </div>
+
+                    <!-- row6 -->
+                    <div id="economy-seat" class="row">
+                        <div class="col-4">
+                            <img src="assets/chair-red.png" alt="taken" id="taken-r6c1" class="taken seats float-left">
+                        </div>
+                        <div class="col-4">
+                            <center>
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r6c2" class="vacant seats">
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r6c3" class="vacant seats">
+                            </center>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/chair-red.png" alt="taken" id="taken-r6c4" class="taken seats float-right">
+                        </div>
+                    </div>
+
+                    <!-- row7 -->
+                    <div id="economy-seat" class="row">
+                        <div class="col-4">
+                            <img src="assets/chair-black.png" alt="vacant" id="vacant-r7c1"
+                                class="vacant seats float-left">
+                        </div>
+                        <div class="col-4">
+                            <center>
+                                <img src="assets/chair-red.png" alt="taken" id="taken-r7c2" class="taken seats">
+                                <img src="assets/chair-red.png" alt="taken" id="taken-r7c3" class="taken seats">
+                            </center>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/chair-red.png" alt="taken" id="taken-r7c4" class="taken seats float-right">
+                        </div>
+                    </div>
+
+                    <!-- row8 -->
+                    <div id="economy-seat" class="row">
+                        <div class="col-4">
+                            <img src="assets/chair-black.png" alt="vacant" id="vacant-r8c1"
+                                class="vacant seats float-left">
+                        </div>
+                        <div class="col-4">
+                            <center>
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r8c2" class="vacant seats">
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r8c3" class="vacant seats">
+                            </center>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/chair-red.png" alt="taken" id="taken-r8c4" class="taken seats float-right">
+                        </div>
+                    </div>
+
+                    <!-- row9 -->
+                    <div id="economy-seat" class="row">
+                        <div class="col-4">
+                            <img src="assets/chair-red.png" alt="taken" id="taken-r9c1" class="taken seats float-left">
+                        </div>
+                        <div class="col-4">
+                            <center>
+                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r9c2" class="vacant seats">
+                                <img src="assets/chair-red.png" alt="taken" id="taken-r9c3" class="taken seats">
+                            </center>
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/chair-red.png" alt="taken" id="taken-r9c4" class="taken seats float-right">
+                        </div>
+                    </div>
+
+                    <p id="business-class-label">
+                        <br><br>
+                        Economy Class <img src="assets/icon-down.png" alt="economy-class-below" class="icon-down">
+                    </p>
+                </div>
+            </center>
+
+        </div>
+
+        <div class="col-md-3"></div>
+    </div>
+    <!-- End of Seat Location HTML -->
+
+    <!-- Start of Footer -->
+    <div id="footer">
+        <center>
+            <p id="footer-title">AirWorld</p>
+            <p id="footer-description">&copy; Rusell Jane Quitain</p>
+        </center>
+    </div>
+    <!-- End of Footer -->
+</body>
+
+<footer>
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script src="js/script.js"></script>
+</footer>
+
+</html>

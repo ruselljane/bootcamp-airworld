@@ -1,0 +1,37 @@
+function bd_confirm() {
+    var storage = window.localStorage;
+    var bd_refnumber = document.getElementById('booking-reference').value;
+    var bd_lastname = document.getElementById('last-name').value;
+    var bd_connumber = document.getElementById('contact-number').value;
+    document.getElementById("try").innerHTML = bd_refnumber + " " + bd_lastname + " " + bd_connumber;
+    // storage.setItem('bd_refnumber1', bd_refnumber);
+    var  = storage.getItem('bd_refnumber');
+
+    document.getElementById("try").innerHTML = storedRefNumbe;;
+
+}
+
+
+function sample(){
+    $(document).ready(function () {
+        var greeting = "Hello ";
+        var storage = window.localStorage;   
+        $('#greeting-form').on('submit', function (e) {
+            e.preventDefault();
+            var name = $('#field-name').val();
+            console.log(name);
+            $('#greeting').text(greeting + name + '!');
+            storage.setItem('name', name);
+        });
+       
+        var storedName = storage.getItem('nama');
+       
+        $('#greeting').text(storedName + '!');
+       });
+}
+
+
+project>create>
+macros>prifle>user profile
+
+CALM APP to WATER PROPERTIES MONITORING APP

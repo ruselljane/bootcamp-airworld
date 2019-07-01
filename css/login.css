@@ -1,0 +1,106 @@
+/* Fonts */
+@font-face {
+    font-family: Walsheim;
+    src: url("fonts/Walsheim-Regular.ttf")
+}
+
+@font-face {
+    font-family: Pintgram;
+    src: url("fonts/Pintgram-Regular.ttf")
+}
+
+/* Login Page */
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url("../assets/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0;
+}
+
+#airworld-whole-logo {
+    margin: 15% 0 16% 0;
+    width: 70%;
+}
+
+.login-inputs {
+    background-color: #21547880;
+    color: #FFF;
+    width: 80%;
+    height: 45px;
+    font-size: 20px;
+    font-family: Walsheim;
+    border: none;
+}
+
+::placeholder {
+    color: #FFF !important;
+}
+
+.login-inputs:focus {
+    color: #FFFFFF;
+    background-color: #1b254a9e;
+    border-color: #80bdff;
+}
+
+.airworld-btn {
+    width: 65%;
+    border-radius: 75px;
+    height: 45px;
+    background-color: #FFFFFF;
+    color: #1b254a;
+    border: solid 1px #707070;
+    font-size: 20px;
+    font-family: Walsheim;
+    transition: 0.5s;
+}
+
+.airworld-btn:hover {
+    color: #FFFFFF;
+    background-color: #1b254a;
+}
+
+.login-icons {
+    width: 40px;
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: none;
+}
+
+.login-input-grp {
+    background-color: #21547880;
+    border: solid 1px #215478;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.row {
+    margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    #airworld-whole-logo {
+        margin: 50% 0 16% 0;
+        width: 100%;
+    }
+
+    .login-input-grp {
+        background-color: #21547880;
+        border: solid 1px #215478;
+        border-radius: 5px;
+        width: 90%;
+    }
+    
+    .airworld-btn{
+        width: 90%;
+    }
+}
