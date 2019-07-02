@@ -84,21 +84,21 @@
             <h2 class="booking-details-title">Please confirm booking details</h2>
             <label for="booking-reference" class="booking-details-label">Booking Reference No.</label>
             <input type="number" name="booking-reference" id="booking-reference"
-                class="booking-details-input form-control" required onkeypress='validate(event)'>
+                class="booking-details-input form-control" required onkeypress="validate(event)">
 
             <label for="last-name" class="booking-details-label">Passenger's Last Name</label>
             <input type="text" name="last-name" id="last-name" class="booking-details-input form-control" required>
 
             <label for="contact-number" class="booking-details-label">Contact Number</label>
             <input type="number" name="contact-number" id="contact-number" class="booking-details-input form-control"
-                required value="639" onkeypress='validate(event)'>
+                required value="" onkeypress="validate(event)">
 
             <input type="button" name="booking-details-confirm" id="booking-details-confirm" class="dark-btn"
-                value="Confirm" onclick="bd_confirm()">
+                value="Confirm" onclick="window.location.href = 'boarding-pass.html'">
         </form>
 
-        <p id="try"></p>
-        <p id="tryw"></p>
+        <!-- <p id="try"></p>
+        <p id="tryw"></p> -->
     </div>
     <!-- End of Booking Details Form -->
 

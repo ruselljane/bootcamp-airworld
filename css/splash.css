@@ -13,7 +13,7 @@ body {
 }
 
 body {
-    background-image: url("../assets/sky.jpg");
+    background-image: url("../assets/sky2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -99,5 +99,8 @@ body {
     #airworld-whole-logo {
         margin: 50% 0 16% 0;
         width: 100%;
+    }
+    #loader{
+        left: 57%;
     }
 }

@@ -1086,7 +1086,9 @@ input[type="number"] {
     width: 100%;
     margin-top: 10px;
 }
+/*************************************** End of card-details.html ***************************************/
 
+/* Modal */
 .modal-title {
     font-family: Walsheim_bold;
     text-align: center;
@@ -1104,15 +1106,6 @@ input[type="number"] {
     justify-content: center;
     overflow: auto;
 }
-
-@media(max-width: 768px) {
-    .modal-dialog {
-        min-height: calc(100vh - 20px);
-    }
-}
-
-/*************************************** End of card-details.html ***************************************/
-
 
 .modal-content {
     border-radius: 20px;
@@ -1143,3 +1136,51 @@ input[type="number"] {
 .modal-header {
     justify-content: center;
 }
+
+@media(max-width: 768px) {
+    .modal-dialog {
+        min-height: calc(100vh - 20px);
+    }
+}
+
+/* End of Modal */
+
+/*************************************** Start of processing-pay.html ***************************************/
+#processing-pay-div {
+    height: 750px;
+}
+
+.processing {
+    font-family: Walsheim_bold;
+    padding-top: 350px;
+}
+
+#paid{
+    display: none;
+}
+
+#loader-center {
+    position: absolute;
+    left: 51%;
+    top: 50%;
+    margin: -75px 0 0 -75px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #1b254a;
+    border-left: 10px solid #1b254a;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@media only screen and (max-width: 767px) {
+    .processing {
+        padding-top: 250px;
+    }
+
+    #loader-center {
+        left: 56%;
+    }
+}
+/*************************************** End of processing-pay.html ***************************************/

@@ -17,12 +17,49 @@ body {
 }
 
 body {
-    background-image: url("../assets/sky.jpg");
+    background-image: url("../assets/skyO2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     margin: 0;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #airworld-whole-logo {
@@ -85,6 +122,10 @@ body {
 
 .row {
     margin: 0;
+}
+
+.marg-bottom{
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 767px) {

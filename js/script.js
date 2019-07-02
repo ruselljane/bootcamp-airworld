@@ -1,7 +1,7 @@
 var loadTime;
 
 function splashLoader(){
-    loadTime = setTimeout(sendIndex, 2000);
+    loadTime = setTimeout(sendIndex, 1000);
 }
 
 function sendIndex(){
@@ -18,6 +18,20 @@ function loader(){
 
 function sendHome(){
     window.location.href='home.html';
+}
+
+function payLoader(){
+    loadTime = setTimeout(showPaid, 2000);
+}
+
+function showPaid(){
+    document.getElementById("processing").style.display = "none";
+    document.getElementById("paid").style.display = "block";
+    loadTime = setTimeout(sendBoardingPass, 800);
+}
+
+function sendBoardingPass(){
+    window.location.href='boarding-pass.html';
 }
 
 function validate(evt) {
