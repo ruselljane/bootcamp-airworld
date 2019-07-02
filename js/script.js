@@ -30,6 +30,20 @@ function showPaid(){
     loadTime = setTimeout(sendBoardingPass, 800);
 }
 
+function reqSeat(){
+    loadTime = setTimeout(showSent, 2000);
+}
+
+function showSent(){
+    document.getElementById("processing").style.display = "none";
+    document.getElementById("paid").style.display = "block";
+    loadTime = setTimeout(sendSeat, 800);
+}
+
+function sendSeat(){
+    window.location.href='seat-location.html';
+}
+
 function sendBoardingPass(){
     window.location.href='boarding-pass.html';
 }
@@ -122,6 +136,14 @@ function saveProfile(){
     save_btn.style.display = "none";
     edit_btn.style.display = "block";
     confirm_btn.style.display = "none";
+
+    // PHP save functions
+}
+
+function seatModal(clicked_id){
+    var changeTo = document.getElementById("changeTo");
+    changeTo.innerHTML = clicked_id;
+   
 
     // PHP save functions
 }

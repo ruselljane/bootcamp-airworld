@@ -14,7 +14,7 @@
 <body>
     <!-- Start of NavBar -->
     <nav class="navbar navbar-expand-md fixed-navbar">
-            <a href="boarding-pass.html"><img src="assets/icon-back.png" alt="" id="icon-back"></a>
+        <a href="boarding-pass.html"><img src="assets/icon-back.png" alt="" id="icon-back"></a>
         <a class="" href="home.html">
             <img src="assets/airworld-whole-logo.png" alt="" id="airworld-whole-logo">
         </a>
@@ -81,7 +81,7 @@
     <div id="seat-location-div" class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
-            <h2 id="SL-title">Seat Number: <span id="SL-location">B09</span></h2>
+            <h2 id="SL-title">Seat Number: <span id="SL-location">C04</span></h2>
             <p id="legends" class="SL-words">Legends:</p>
 
             <div class="row">
@@ -132,13 +132,18 @@
                         </div>
                         <div class="col-4">
                             <center>
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r1c2" class="vacant seats">
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r1c3" class="vacant seats">
+                                <a href="" data-toggle="modal" data-target="#change-seat"><img
+                                        src="assets/chair-black.png" alt="vacant" id="A02" class="vacant seats"
+                                        onclick="seatModal(this.id)"></a>
+                                <a href="" data-toggle="modal" data-target="#change-seat"><img
+                                        src="assets/chair-black.png" alt="vacant" id="A03" class="vacant seats"
+                                        onclick="seatModal(this.id)"></a>
                             </center>
                         </div>
                         <div class="col-4">
-                            <img src="assets/chair-black.png" alt="vacant" id="vacant-r1c4"
-                                class="vacant seats float-right">
+                            <a href="" data-toggle="modal" data-target="#change-seat"><img src="assets/chair-black.png"
+                                    alt="vacant" id="A04" class="vacant seats float-right"
+                                    onclick="seatModal(this.id)"></a>
                         </div>
                     </div>
 
@@ -149,13 +154,18 @@
                         </div>
                         <div class="col-4">
                             <center>
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r2c2" class="vacant seats">
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r2c3" class="vacant seats">
+                                <a href="" data-toggle="modal" data-target="#change-seat"><img
+                                        src="assets/chair-black.png" alt="vacant" id="B2" class="vacant seats"
+                                        onclick="seatModal(this.id)"></a>
+                                <a href="" data-toggle="modal" data-target="#change-seat"><img
+                                        src="assets/chair-black.png" alt="vacant" id="B3" class="vacant seats"
+                                        onclick="seatModal(this.id)"></a>
                             </center>
                         </div>
                         <div class="col-4">
-                            <img src="assets/chair-black.png" alt="vacant" id="vacant-r2c4"
-                                class="vacant seats float-right">
+                            <a href="" data-toggle="modal" data-target="#change-seat"><img src="assets/chair-black.png"
+                                    alt="vacant" id="B4" class="vacant seats float-right"
+                                    onclick="seatModal(this.id)"></a>
                         </div>
                     </div>
 
@@ -166,12 +176,14 @@
                         </div>
                         <div class="col-4">
                             <center>
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r3c2" class="vacant seats">
+                                <a href="" data-toggle="modal" data-target="#change-seat"><img
+                                        src="assets/chair-black.png" alt="vacant" id="C02" class="vacant seats"
+                                        onclick="seatModal(this.id)"></a>
                                 <img src="assets/chair-red.png" alt="taken" id="taken-r3c3" class="taken seats">
                             </center>
                         </div>
                         <div class="col-4">
-                            <img src="assets/chair-green.png" alt="vacant" id="your-seat-r3c4"
+                            <img src="assets/chair-green.png" alt="yours" id="your-seat-r3c4"
                                 class="taken seats float-right">
                         </div>
                     </div>
@@ -183,7 +195,9 @@
                         </div>
                         <div class="col-4">
                             <center>
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r4c2" class="vacant seats">
+                                <a href="" data-toggle="modal" data-target="#change-seat"><img
+                                        src="assets/chair-black.png" alt="vacant" id="D02" class="vacant seats"
+                                        onclick="seatModal(this.id)"></a>
                                 <img src="assets/chair-red.png" alt="taken" id="taken-r4c3" class="taken seats">
                             </center>
                         </div>
@@ -195,13 +209,18 @@
                     <!-- row5 -->
                     <div id="economy-seat" class="row">
                         <div class="col-4">
-                            <img src="assets/chair-black.png" alt="vacant" id="vacant-r5c2"
-                                class="vacant seats float-left">
+                            <a href="" data-toggle="modal" data-target="#change-seat"><img src="assets/chair-black.png"
+                                    alt="vacant" id="E01" class="vacant seats float-left"
+                                    onclick="seatModal(this.id)"></a>
                         </div>
                         <div class="col-4">
                             <center>
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r5c2" class="vacant seats">
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r5c2" class="vacant seats">
+                                <a href="" data-toggle="modal" data-target="#change-seat"><img
+                                        src="assets/chair-black.png" alt="vacant" id="E02" class="vacant seats"
+                                        onclick="seatModal(this.id)"></a>
+                                <a href="" data-toggle="modal" data-target="#change-seat"><img
+                                        src="assets/chair-black.png" alt="vacant" id="E03" class="vacant seats"
+                                        onclick="seatModal(this.id)"></a>
                             </center>
                         </div>
                         <div class="col-4">
@@ -212,13 +231,18 @@
                     <!-- row5 -->
                     <div id="economy-seat" class="row">
                         <div class="col-4">
-                            <img src="assets/chair-black.png" alt="vacant" id="vacant-r5c1"
-                                class="vacant seats float-left">
+                            <a href="" data-toggle="modal" data-target="#change-seat"><img src="assets/chair-black.png"
+                                    alt="vacant" id="F01" class="vacant seats float-left"
+                                    onclick="seatModal(this.id)"></a>
                         </div>
                         <div class="col-4">
                             <center>
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r5c2" class="vacant seats">
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r5c3" class="vacant seats">
+                                <a href="" data-toggle="modal" data-target="#change-seat"><img
+                                        src="assets/chair-black.png" alt="vacant" id="F02" class="vacant seats"
+                                        onclick="seatModal(this.id)"></a>
+                                <a href="" data-toggle="modal" data-target="#change-seat"><img
+                                        src="assets/chair-black.png" alt="vacant" id="F03" class="vacant seats"
+                                        onclick="seatModal(this.id)"></a>
                             </center>
                         </div>
                         <div class="col-4">
@@ -233,8 +257,10 @@
                         </div>
                         <div class="col-4">
                             <center>
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r6c2" class="vacant seats">
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r6c3" class="vacant seats">
+                                    <a href="" data-toggle="modal" data-target="#change-seat"><img src="assets/chair-black.png" alt="vacant" id="G02" class="vacant seats"
+                                    onclick="seatModal(this.id)"></a>
+                                    <a href="" data-toggle="modal" data-target="#change-seat"><img src="assets/chair-black.png" alt="vacant" id="G03" class="vacant seats"
+                                    onclick="seatModal(this.id)"></a>
                             </center>
                         </div>
                         <div class="col-4">
@@ -245,8 +271,8 @@
                     <!-- row7 -->
                     <div id="economy-seat" class="row">
                         <div class="col-4">
-                            <img src="assets/chair-black.png" alt="vacant" id="vacant-r7c1"
-                                class="vacant seats float-left">
+                                <a href="" data-toggle="modal" data-target="#change-seat"><img src="assets/chair-black.png" alt="vacant" id="H01"
+                                class="vacant seats float-left" onclick="seatModal(this.id)"></a>
                         </div>
                         <div class="col-4">
                             <center>
@@ -262,13 +288,15 @@
                     <!-- row8 -->
                     <div id="economy-seat" class="row">
                         <div class="col-4">
-                            <img src="assets/chair-black.png" alt="vacant" id="vacant-r8c1"
-                                class="vacant seats float-left">
+                                <a href="" data-toggle="modal" data-target="#change-seat"><img src="assets/chair-black.png" alt="vacant" id="I01"
+                                class="vacant seats float-left" onclick="seatModal(this.id)"></a>
                         </div>
                         <div class="col-4">
                             <center>
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r8c2" class="vacant seats">
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r8c3" class="vacant seats">
+                                    <a href="" data-toggle="modal" data-target="#change-seat"><img src="assets/chair-black.png" alt="vacant" id="I02" class="vacant seats"
+                                    onclick="seatModal(this.id)"></a>
+                                    <a href="" data-toggle="modal" data-target="#change-seat"> <img src="assets/chair-black.png" alt="vacant" id="I03" class="vacant seats"
+                                    onclick="seatModal(this.id)"></a>
                             </center>
                         </div>
                         <div class="col-4">
@@ -283,7 +311,8 @@
                         </div>
                         <div class="col-4">
                             <center>
-                                <img src="assets/chair-black.png" alt="vacant" id="vacant-r9c2" class="vacant seats">
+                                    <a href="" data-toggle="modal" data-target="#change-seat"><img src="assets/chair-black.png" alt="vacant" id="J02" class="vacant seats"
+                                    onclick="seatModal(this.id)"></a>
                                 <img src="assets/chair-red.png" alt="taken" id="taken-r9c3" class="taken seats">
                             </center>
                         </div>
@@ -300,6 +329,30 @@
             </center>
 
         </div>
+        <!-- Change Seat -->
+        <div class="modal fade" id="change-seat" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button><br> -->
+                        <center>
+                            <h4 class="modal-title text-center col-12">Seat C04</h4>
+                        </center>
+                    </div>
+                    <div class="modal-body ios">
+                        <br>
+                        <center>
+                            <p>Change seat to <b id="changeTo"></b></p>
+                        </center>
+                        <a href="request-seat.html"><button class="modal-btn border-blue">Request Seat</button></a><br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End of Change Seat -->
 
         <div class="col-md-3"></div>
     </div>

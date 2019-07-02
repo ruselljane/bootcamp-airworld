@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="reqSeat()">
     <!-- Start of NavBar -->
     <nav class="navbar navbar-expand-md fixed-navbar">
         <a href="home.html"><img src="assets/icon-back.png" alt="" id="icon-back"></a>
@@ -78,67 +78,15 @@
     <!-- End of NavBar -->
 
     <!-- Start of Check-In HTML -->
-    <div id="check-in-details-div" class="row">
-        <!-- Showing boarding pass ticket -->
-        <div id="boarding-ticket-div" class="col-md-7">
-            <center>
-                <img src="assets/boarding-ticket.png" alt="boarding-ticket" id="boarding-ticket">
-            </center>
-        </div>
-        <!-- End showing boarding pass ticket -->
-        <br>
-
-        <!-- Start of disabled forms -->
-        <div id="boarding-ticket-details" class="col-md-5">
-            <h2 id="boarding-pass-2" class="boarding-pass">Boarding Pass</h2>
-
-            <label for="boarding-area" class="check-details-label">Boarding Area</label>
-            <div class="input-group check-details-inputG">
-                <input type="text" name="boarding-area" id="boarding-area" class="check-details-input form-control"
-                    required disabled value="Gate B25">
-                <a href="boarding-area-location_id=0001.html">
-                    <img src="assets/check.png" alt="" class="bp-info-btn">
-                </a>
+    <div id="processing-pay-div">
+        <center>
+            <div class="loading">
+                <h4 id="processing"class="processing">Requesting</h4>
+                <h4 id="paid" class="processing">Request Sent</h4>
+                <div id="loader-center"></div>
             </div>
+        </center>
 
-            <label for="checked-luggage" class="check-details-label">Checked-In Luggage</label>
-            <div class="input-group check-details-inputG">
-                <input type="text" name="checked-luggage" id="checked-luggage" class="check-details-input form-control"
-                    disabled value="location">
-                <a href="check-in-luggage_id=0001.html">
-                    <img src="assets/check.png" alt="" class="bp-info-btn">
-                </a>
-            </div>
-
-            <label for="bag-restriction" class="check-details-label">Baggage Restriction</label>
-            <div class="input-group check-details-inputG">
-                <input type="text" name="bag-restriction" id="bag-restriction" class="check-details-input form-control"
-                    disabled value="7 kg Carry-on + 20 kg Check-in">
-                <a href="bag-restriction_id=0001.html">
-                    <img src="assets/check.png" alt="" class="bp-info-btn">
-                </a>
-            </div>
-
-            <label for="seat-number" class="check-details-label">Seat Number</label>
-            <div class="input-group check-details-inputG">
-                <input type="text" name="seat-number" id="seat-number" class="check-details-input form-control" disabled
-                    value="C04">
-                <a href="seat-location_id=0001.html">
-                    <img src="assets/check.png" alt="" class="bp-info-btn">
-                </a>
-            </div>
-
-            <label for="airplane-meal" class="check-details-label">Airplane Meal</label>
-            <div class="input-group check-details-inputG">
-                <input type="text" name="airplane-meal" id="airplane-meal" class="check-details-input form-control"
-                    disabled value="Free Meal">
-                <a href="airplane-free-meal.html">
-                    <img src="assets/check.png" alt="" class="bp-info-btn">
-                </a>
-            </div>
-
-        </div>
-        <!-- Start of disabled forms -->
     </div>
     <!-- Start of Check-In HTML -->
 
