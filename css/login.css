@@ -64,14 +64,14 @@ body {
 
 #airworld-whole-logo {
     margin: 15% 0 16% 0;
-    width: 70%;
+    width: 50%;
 }
 
 .login-inputs {
     background-color: #21547880;
     color: #FFF;
-    width: 80%;
-    height: 45px;
+    width: 65%;
+    height: 40px;
     font-size: 20px;
     font-family: Walsheim;
     border: none;
@@ -90,7 +90,7 @@ body {
 .airworld-btn {
     width: 65%;
     border-radius: 75px;
-    height: 45px;
+    height: 40px;
     background-color: #FFFFFF;
     color: #1b254a;
     border: solid 1px #707070;
@@ -105,7 +105,7 @@ body {
 }
 
 .login-icons {
-    width: 40px;
+    width: 35px;
 }
 
 .input-group-text {

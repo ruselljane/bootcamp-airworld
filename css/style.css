@@ -134,15 +134,15 @@ input[type="number"] {
 
 #footer-title {
     font-family: Pintgram;
-    padding-top: 60px;
-    font-size: 60px;
+    padding-top: 55px;
+    font-size: 55px;
     margin: 0;
     line-height: 0.5;
 }
 
 #footer-description {
-    padding-bottom: 60px;
-    font-size: 15px;
+    padding-bottom: 55px;
+    font-size: 14px;
     margin: 0;
 }
 
@@ -151,16 +151,6 @@ input[type="number"] {
 @media only screen and (max-width: 767px) {
     #footer {
         display: none;
-    }
-
-    #footer-title {
-        padding-top: 50px;
-        font-size: 40px;
-    }
-
-    #footer-description {
-        padding-bottom: 40px;
-        font-size: 9px;
     }
 }
 
@@ -264,10 +254,10 @@ input[type="number"] {
     background-color: #1b254a;
     color: #FFF;
     /* width: 20%; */
-    height: 50px;
+    height: 42px;
     box-shadow: 0 6px 6px rgba(0, 0, 0, .3);
     transition: 0.5s;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Walsheim;
 }
 
@@ -297,7 +287,7 @@ input[type="number"] {
 }
 
 .home-btn-size {
-    width: 50%;
+    width: 45%;
 }
 
 #check-in-btn-home {
@@ -307,6 +297,7 @@ input[type="number"] {
 #btn-div {
     background-image: url("../assets/cover.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
     padding-top: 20%;
     padding-bottom: 3%;
@@ -320,7 +311,7 @@ input[type="number"] {
 .cards {
     border-radius: 5px;
     height: 250px;
-    width: 600px;
+    width: 550px;
     margin: 25px 0;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);
     padding: 20px 10px;
@@ -349,25 +340,25 @@ input[type="number"] {
 
 .cards-nav-link {
     width: 500px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .home-card-title {
     font-family: Walsheim;
-    font-size: 30px;
+    font-size: 26px;
     color: #000;
 }
 
 .home-card-time {
     font-family: Walsheim_light;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     color: #000;
 }
 
 .home-card-details {
     font-family: Walsheim_light;
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
 }
 
@@ -394,12 +385,12 @@ input[type="number"] {
     }
 
     .home-card-title {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .home-card-time,
     .home-card-details {
-        font-size: 18px;
+        font-size: 17px;
     }
 }
 
@@ -411,7 +402,6 @@ input[type="number"] {
     width: 100%;
     margin-bottom: 17px;
 }
-
 
 #booking-details-form {
     padding: 100px 0 125px 0;
