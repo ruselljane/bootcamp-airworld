@@ -46,16 +46,16 @@ input[type="number"] {
 }
 
 #airworld-whole-logo {
-    height: 60px;
+    height: 50px;
     margin: 0;
 }
 
 #menu-btn {
-    width: 55px;
+    width: 50px;
 }
 
 .navbar-icons {
-    width: 40px;
+    width: 32px;
 }
 
 .fixed-navbar {
@@ -99,15 +99,14 @@ input[type="number"] {
 }
 
 #icon-back {
-    width: 35px;
-    margin-right: 8%;
+    width: 30px;
     display: none;
 }
 
 @media only screen and (max-width: 767px) {
     #airworld-whole-logo {
-        height: 50px;
-        margin: 0;
+        height: 44px;
+        margin: 4px 1px;
     }
 
     .notification .badge {
@@ -117,7 +116,8 @@ input[type="number"] {
     }
 
     #icon-back {
-        display: block
+        display: block;
+        margin-right: 10%;
     }
 }
 
@@ -315,6 +315,14 @@ input[type="number"] {
     margin: 25px 0;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, .3);
     padding: 20px 10px;
+    transition: 1s;
+
+}
+
+.cards:hover{
+    box-shadow: 7px 7px 14px rgba(0, 0, 0, .3);
+    height: 255px;
+    width: 555px;
 }
 
 .booked-paid {
@@ -376,22 +384,7 @@ input[type="number"] {
 
 /* Responsiveness */
 @media only screen and (max-width: 767px) {
-    .home-card-icon {
-        width: 90%;
-    }
 
-    .cards {
-        padding: 10px 5px;
-    }
-
-    .home-card-title {
-        font-size: 24px;
-    }
-
-    .home-card-time,
-    .home-card-details {
-        font-size: 17px;
-    }
 }
 
 /* End of Check-in     */
@@ -436,6 +429,19 @@ input[type="number"] {
 
 
 @media only screen and (max-width: 767px) {
+    .home-card-icon {
+        width: 90%;
+    }
+
+    .home-card-title {
+        font-size: 24px;
+    }
+
+    .home-card-time,
+    .home-card-details {
+        font-size: 17px;
+    }
+
     #booking-details-form {
         margin-left: 10%;
         margin-right: 10%;
@@ -481,6 +487,13 @@ input[type="number"] {
     }
 
     .cards {
+        height: 175px;
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .cards:hover{
+        box-shadow: 7px 7px 14px rgba(0, 0, 0, .3);
         height: 175px;
         width: 100%;
     }
